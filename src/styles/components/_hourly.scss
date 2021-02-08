@@ -1,0 +1,40 @@
+.hourly {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding: 0 0rem;
+  margin: 0;
+  text-align: center;
+}
+
+.icon-small {
+  color: $glacier-blue;
+}
+
+.png-icon-small {
+  width: 5rem;
+}
+
+@media (max-width: 41.4rem) {
+  // .hourly {
+  //   flex-direction: row;
+  //   justify-content: space-around;
+  //   align-items: center;
+  // }
+  .hourly {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+  }
+
+  .hourly p:nth-child(4),
+  .hourly p:nth-child(5) {
+    // grid-column: span 2;
+    width: 7.5rem;
+  }
+
+  .icon-small {
+    // margin: 1.3rem 0.1rem 0;
+  }
+}

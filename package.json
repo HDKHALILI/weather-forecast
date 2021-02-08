@@ -6,16 +6,26 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "firebase": "^8.2.6",
+    "firebase-tools": "^9.3.0",
+    "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.2",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "firebase-init": "firebase login && firebase init",
+    "setup-env": "firebase functions:config:set forecast-teller.react_app_open_weather_key=process.env.REACT_APP_OPEN_WEATHER_API_KEY forecast-teller.react_app_google_key=process.env.REACT_APP_GOOGLE_MAP_API_KEY",
+    "deploy": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
