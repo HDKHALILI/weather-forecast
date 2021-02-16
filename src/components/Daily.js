@@ -32,7 +32,7 @@ const Daily = props => {
         <p>{props.data.weather[0].description}</p>
         <div className="misc-details">
           <p>Humidity: {props.data.humidity}%</p>
-          <p>wind speed: {props.data.windSpeed} m/s</p>
+          <p>Wind Speed: {props.data.wind_speed} m/s</p>
         </div>
       </div>
     </div>
